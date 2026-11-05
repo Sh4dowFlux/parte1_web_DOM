@@ -1,0 +1,124 @@
+/* =======================================================
+   Estilos de la aplicacion "Contador de Likes"
+   ======================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+/* Fondo gris claro de la pagina */
+body {
+  background-color: #f4f7f6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Contenedor principal (tarjeta blanca) */
+.container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Titulo principal */
+h1 {
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Subtitulo descriptivo */
+.description {
+  color: #555555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Numero contador destacado en azul */
+.counter-box {
+  font-size: 48px;
+  font-weight: bold;
+  color: #3498db;
+  margin: 10px 0;
+}
+
+/* Boton interactivo verde */
+.btn-click {
+  background-color: #2ecc71;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Efecto de elevacion al pasar el mouse */
+.btn-click:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(46, 204, 113, 0.35);
+}
+
+.btn-click:active {
+  transform: translateY(0);
+}
+
+/* Tabla de registros */
+.table-container {
+  width: 100%;
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #f8f9fa;
+  color: #7f8c8d;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody td {
+  color: #333333;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.cell-numero {
+  width: 40%;
+}
+
+.cell-hora {
+  width: 60%;
+}

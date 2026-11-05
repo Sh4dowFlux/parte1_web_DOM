@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactividad con el DOM - Contador de Likes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Tarjeta principal -->
+  <main class="container">
+
+    <!-- Titulo y descripcion -->
+    <h1>Interactividad con el DOM</h1>
+    <p class="description">
+      Haz clic en el boton para incrementar el contador y registrar la hora exacta del evento en la tabla.
+    </p>
+
+    <!-- Contador dinamico -->
+    <div id="contador" class="counter-box">0</div>
+
+    <!-- Boton disparador de eventos -->
+    <button id="btn-like" class="btn-click">¡Haz Clic Aqui!</button>
+
+    <!-- Tabla de registros -->
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th class="cell-numero">Nº Clic</th>
+            <th class="cell-hora">Hora</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-registros">
+          <!-- Las filas se insertan dinamicamente con JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
